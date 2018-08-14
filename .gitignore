@@ -1,0 +1,7 @@
+node_modules/
+dist/
+public/
+*.log
+*.css.d.ts
+*.scss.d.ts
+.DS_store
