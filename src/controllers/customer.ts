@@ -26,7 +26,11 @@ export class CustomerController implements Controller {
     res.send(await customerService.create(req.body));
   }
 
-  private async update(req: Request, res: Response): Promise<void> {}
+  private async update(req: Request, res: Response): Promise<void> {
+    res.send(await customerService.update(req.body));
+  }
 
-  private async remove(req: Request, res: Response): Promise<void> {}
+  private async remove(req: Request, res: Response): Promise<void> {
+    res.send(await customerService.del(+req.body.id));
+  }
 }
